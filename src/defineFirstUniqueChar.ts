@@ -20,6 +20,11 @@ const defineFirstUniqueChar = (text: string) => {
     }
   });
 
+  if (!allFirstUniqueSymbols.length) {
+    alert("Provided text does not contain unique symbols");
+    return;
+  }
+
   const allUniqueCountedChars = defineUniqueChars(allFirstUniqueSymbols);
   defineFirstUniqueChars(allUniqueCountedChars);
 
